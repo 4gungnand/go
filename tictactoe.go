@@ -150,7 +150,7 @@ func (state *gameState) checkForWinner() gameResult {
     
     // check vertical columns
     for column := 0; column < boardSize; column++ {
-        if result := checkLine(0, column, 1, 0); result != noWinnerYet {
+        if result := checkLine(0, column, 1, 0); result != noWinnerYet { // the position of arguments are important 
             return result
         }
     }
